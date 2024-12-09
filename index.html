@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Abby Vick's Portfolio</title>
   <style>
+    /* Reset default list styles */
     ul {
       list-style-type: none;
       margin: 0;
@@ -12,6 +13,7 @@
       background-color: #044218;
     }
 
+    /* Style for navigation links */
     li {
       float: left;
     }
@@ -20,8 +22,8 @@
       display: block;
       color: white;
       text-align: center;
-      padding: 30px 30px;
-      text-size-adjust: 20px;
+      padding: 20px 30px;
+      font-size: 18px;
       text-decoration: none;
     }
 
@@ -33,89 +35,118 @@
       background-color: #04AA6D;
     }
 
- 
+    /* Image styling */
     img {
-
-      
-      margin-top: 00px;
-      margin-right: 700px
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px; /* Add some rounded corners for aesthetics */
     }
-    
+
+    /* Page title styling */
     h1 {
       text-align: center;
-      font-size: 100px;
+      font-size: 60px;
       color: #044218;
-      
       margin-top: 70px;
       margin-bottom: 20px;
     }
-    
-    .form {
-      margin-left: 100px
+
+    /* Subtitle styling */
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 10px;
     }
-    
 
-      
-    
+    /* Text content styling */
+    p {
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+      max-width: 700px;
+      margin: 20px auto;
+    }
 
-    .image-container {
+    /* Form container to align the inputs and image side by side */
+    .form-container {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
       gap: 20px;
+      max-width: 1200px;
+      margin: 30px auto;
     }
-    
-    .image-container img {
-      max-width: 100%;
-      height: auto;
+
+    /* Styling for the form */
+    .form-container form {
+      width: 60%; /* Adjust width to make space for the image */
     }
+
+    .form-container textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box; /* Ensure padding doesn't affect width */
+    }
+
+    .form-container input[type="submit"] {
+      padding: 15px 30px;
+      background-color: #04AA6D;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #032b10;
+    }
+
   </style>
 </head>
 <body>
 
+  <!-- Navigation bar -->
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#aboutme">About Me</a></li>
     <li><a href="#work">Work</a></li>
-    <li><a href="contact">Contact</a></li>
+    <li><a href="#contact" class="active">Contact</a></li>
   </ul>
-  <h1>
-    Contact Me!
-  </h1>
-<h2>I would love to hear from you!</h2>
+
+  <h1>Contact Me!</h1>
+  <h2>I would love to hear from you!</h2>
+  
   <p>
-    At the end of the day I am still a student learning how to be a better designer. Please feel free to reach out for feedback, or potential collaborations. Cannot wait to hear from you!
+    At the end of the day, I am still a student learning how to be a better designer.
+    Please feel free to reach out for feedback, or potential collaborations. Can't wait to hear from you!
   </p>
-    
 
-  <p>
-    Name
-  </p>
-<form>
+  <!-- Form and Image container -->
+  <div class="form-container">
+    <!-- Form Section -->
+    <form>
+      <p>Name</p>
+      <textarea id="Name" name="Name" rows="1" placeholder="Enter your name"></textarea>
+      
+      <p>Email</p>
+      <textarea id="Email" name="Email" rows="1" placeholder="Enter your email"></textarea>
+      
+      <p>Questions, Comments, or Concerns?</p>
+      <textarea id="Comments" name="Comments" rows="5" placeholder="Enter your message"></textarea>
+      
+      <input type="submit" value="Submit">
+    </form>
 
-  <textarea id="Name" name="Name" rows="1" cols="50"></textarea>
-  </form>
-  <p>
-    
+    <!-- Image Section -->
+    <div class="image-container">
+      <img src="socials.jpg" alt="Social Media Links" width="500">
+    </div>
+  </div>
 
-  Email
-  </p>
-  <form>
-
-  <textarea id="Email" name="Email" rows="1" cols="50"></textarea>
-  </form>
-  <p>
-    
-
-  Questions, Comments or Concerns?
-  </p>
-  <form>
-
-  <textarea id="Comments, Questions, Concerns" name="Comments, Questions, Concerns" rows="5" cols="50"></textarea>
-  </form>
-  <form>
-  <input type="submit" value="Submit">
-</form>
-  <img src="socials.jpg" alt="socials" width=500
-  <
-  </body>
+</body>
 </html>
